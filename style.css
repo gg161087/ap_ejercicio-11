@@ -4,69 +4,139 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;       
+}
+body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
 }
-header .container{
-    height: 9vh;
-    width: 80vw;
-}
-
 h1, h2, h3, h4, h5, h6 a{
-    font-family: 'Nunito', sans-serif;    
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;    
 }
 a {
-    font-weight: bold !important;
-    font-size: 16px !important;  
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 16px;  
 }
-.li-button{
+.container{
+    height: 8vh;
+}
+.menu{
     display: flex;
-    height: 2.2rem;
-    width: 7rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
 }
-.btn-login{
-    background-color: #E21982;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 36px;
-    width: 100%;
-    font-size: 16px !important;
+.menu .navbar-collapse ul li {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
 }
 
-.collapse ul{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 1rem;
+.li-button{
+    display: flex;
+    align-items: flex-end;
 }
-.principal{
-    color: white;
-    padding: 0;
-    height: 800px; 
+.btn-rosa{
+    background-color: #E21982;
+    color: white;    
+    border: none;
+    border-radius: 36px;
+    height: 2.2rem;
+    width: 7rem;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 16px;
+}
+
+.btn-rosa:hover{
+    background-color: #C10767;
+    box-shadow: 0 4px 16px rgb(25, 26, 26);
+    transition: all 0.5s ease;
+}
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-principal{
+    margin-top: auto;
+    position: absolute;
+    color: white;        
     display: flex;    
     flex-direction: column; 
     justify-content: center;
-    align-items: center; 
-    background-image: url('./assets/images/banner-principal.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 100%;    
+}
+.banner-principal h1{   
+    font-size: 40px;
+}
+#quienes-somos{
+    background-color: #E8E8E8;
+}
+#quienes-somos .row .col-6{
+    margin: 0;
+    padding: 0;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+}
+#quienes-somos .row .col-6 h6{ 
+    font-family: 'Nunito Extra Light', sans-serif;    
+    font-size: 12px;
+    color: #C10767;
+    margin-bottom: 0;
 }
 
 footer{
     background-color: #22193F;
     color: white;
 }
-
+/* 
 @media (max-width: 992px) {
     .menu{
-        display: contents;
+        display: contents;        
+    }
+}    
+*/
+
+@media (max-width: 992px) {
+    .container{
+        height: auto;
+    }
+    .menu{
+        display: contents;        
+        justify-content: flex-end;
+    }
+    .container-menu{
+        display: flex;        
     }
     .logo{
         display: flex;
-        justify-content: flex-end;        
+        justify-content: center;        
+    }
+    .banner-principal{
+        width: 60%;
+    }
+}
+@media (max-width: 518px){
+    .banner-principal{
+        width: 100%;
     } 
+}
+@media (max-width: 380px){
+    .banner-principal{
+        width: 100%;
+    }
+    .banner-principal h1{
+        font-size: 30px;
+    }
+    .banner-principal p{
+        font-size: 12px;
+    }  
 }
 
 @media (min-width: 992px) {
