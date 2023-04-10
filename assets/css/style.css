@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+    --font-nunito: 'Nunito', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+    --rosa: #E21982;
+    --azulOscuro: #22193F;
+    --gris: #E8E8E8;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;       
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-OpenSans);
 }
 h1, h2, h3, h4, h5, h6 a{
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-nunito);
     font-weight: 900;    
 }
 a {
-    font-family: 'Nunito Bold', sans-serif;
-    font-size: 16px;  
+    /* font-family: 'Nunito Bold', sans-serif; */
+    font-size: 1rem;
+    font-weight: 900;   
 }
 .container{
     height: 8vh;
@@ -40,7 +49,7 @@ a {
 }
 .btn-rosa{
     background-color: #E21982;
-    color: white;    
+    color: var(--gris);    
     border: none;
     border-radius: 36px;
     height: 2.2rem;
@@ -63,7 +72,7 @@ a {
 .banner-principal{
     margin-top: auto;
     position: absolute;
-    color: white;        
+    color: var(--gris);        
     display: flex;    
     flex-direction: column; 
     justify-content: center;
@@ -76,7 +85,7 @@ a {
     font-size: 40px;
 }
 #quienes-somos{
-    background-color: #E8E8E8;
+    background-color: var(--gris);
 }
 #quienes-somos .row .col-6{
     margin: 0;
@@ -93,7 +102,7 @@ a {
 
 footer{
     background-color: #22193F;
-    color: white;
+    color: var(--gris);
 }
 /* 
 @media (max-width: 992px) {
