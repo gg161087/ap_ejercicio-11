@@ -10,38 +10,40 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <div class="col-6 logo">
-                    <a href="#" class="navbar-brand">
-                        <img src="./assets/images/svg/logo.svg" alt="admin">
-                    </a>
-                </div>
-                <div class="col-6 menu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cómo funciona</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FAQS</a>
-                            </li>
-                            <li class="nav-item li-button">
-                                <button type="button" class="btn-rosa" id="btn-login">
-                                    Login                                    
-                                </button>
-                            </li>
-                        </ul>
-                    </div>                   
-                </div>
-            </div>      
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <div class="col-6 logo">
+                        <a href="#" class="navbar-brand">
+                            <img src="./assets/images/svg/logo.svg" alt="admin">
+                        </a>
+                    </div>
+                    <div class="col-6 menu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cómo funciona</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQS</a>
+                                </li>
+                                <li class="nav-item li-button">
+                                    <button type="button" class="btn-rosa" id="btn-login">
+                                        Login                                    
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>                   
+                    </div>
+                </div>      
+            </nav>
+        </div>
     </header>
     <main>
         <section id="home">
@@ -61,30 +63,58 @@
             </div>
         </section>
         <section id="quienes-somos" class="container-fluid text-center">
-            <div class="row justify-content-center">
-                <div class="col-6">                    
-                    <h6>CONOCENOS</h6>
-                    <H3>Quienes somos</H3>
-                    <p>
-                        En <strong>Anima-T</strong> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
-                        A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
-                    </p>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">                    
+                        <h6>CONOCENOS</h6>
+                        <h2>Quienes somos</h2>
+                        <p>
+                            En <strong>Anima-T</strong> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
+                            A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="container-fluid text-center">
-            <div class="row justify-content-center">
-                <h2>¿Buscas ayuda?</h2>
+        <section class="buscas">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <h2>¿Buscas ayuda?</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="./assets/images/svg/icono-preguntas.svg" alt="icono signo de preguntas">
+                        <h2>01.</h2>
+                        <p>Responde unas preguntas para conocer tu perfil y lo que buscás.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/svg/icono-profesionales.svg" alt="icono de profesionales">
+                        <h2>02.</h2>
+                        <p>Accede al ranking de profesionales que construimos para ayudarte.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/svg/icono-agenda.svg" alt="icono de agenda">
+                        <h2>03.</h2>
+                        <p>Acuerda un encuentro virtual para comenzar tu proceso.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
+        </section>
+        <section class="container-fluid text-center ayudar">
+            <div class="container brindas">                
+                <div class="col-7 ayuda">
+                    <h4>Si brindas ayuda y te interesa sumarte</h4>
+                </div>
+                <div class="col-5 div-btn">
+                    <button class="btn-haceClick">Hacé click aquí</button>
+                </div>
             </div>
         </section>       
     </main>
     <footer>
-        asd
+        <div class="container">
+
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
