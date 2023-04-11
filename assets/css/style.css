@@ -84,6 +84,7 @@ a {
 }
 .text p{
     font-size: 1.2rem;
+    color: var(--gris);
 }
 #quienes-somos{
     background-color: var(--gris);
